@@ -4,9 +4,7 @@
   "description": "Two-Factor Authentication dengan Zero Knowledge Proof dan TOTP",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "cd zkp-frontend && npm install && npm run build",
-    "postinstall": "npm run build"
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=18.0.0"

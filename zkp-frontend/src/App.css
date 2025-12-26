@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.App-header {
+  padding: 20px;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-panel,
+.logs-panel {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-panel h2 {
+  color: #333;
+}
+
+.main-panel input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.main-panel button {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #667eea;
+  color: white;
+  font-weight: bold;
+}
+
+.main-panel button:hover {
+  background: #5568d3;
+}
+
+.logs-panel {
+  background: #1a1a1a;
+  color: #00ff00;
+}
+
+.logs-panel h3 {
+  color: #00ff00;
+  margin-top: 0;
+}
+
+.logs {
+  max-height: 500px;
+  overflow-y: auto;
+  text-align: left;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+}
+
+.log-entry {
+  padding: 5px;
+  border-bottom: 1px solid #333;
+}
+
+code {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #333;
+}

@@ -477,7 +477,7 @@ app.post("/api/debug/clear-totp/:username", (req, res) => {
 // ========================================
 // SERVE REACT APP - Handle client-side routing
 // ========================================
-app.get("*", (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "zkp-frontend/build", "index.html"));
 });
 
